@@ -11,6 +11,6 @@
 
 @interface SelfieDataLoad : NSObject<UIAlertViewDelegate>
 
-- (void)fetchSelfieData:(NSString *)accessToken;
+- (void)fetchSelfieData;
 
 @end

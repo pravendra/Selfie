@@ -37,7 +37,7 @@
     [self.activityView stopAnimating];
     if (![[[SelfieDataManager sharedInstance]accessToken]  isEqual: NULL_RESPONSE]) {
         SelfieDataLoad *dataLoad = [[SelfieDataLoad alloc]init];
-        [dataLoad fetchSelfieData:nil];
+        [dataLoad fetchSelfieData];
         
         SelfieViewController *selfieViewController = [[UIStoryboard storyboardWithName:MAIN_STORYBOARD bundle:nil]instantiateViewControllerWithIdentifier:SELFIE_VIEW_CONTROLLER];
         [self presentViewController:selfieViewController animated:NO completion:nil];

@@ -32,7 +32,7 @@
     return self;
 }
 
-- (void)fetchSelfieData:(NSString *)accessToken
+- (void)fetchSelfieData
 {
     NSURL *url = [NSURL URLWithString:[[SELFIE_IMAGE_URL stringByAppendingString:[Util getAccessTokenFrom:[[SelfieDataManager sharedInstance]accessToken] with:@"="]]stringByAppendingString:[NSString stringWithFormat:@"&max_tag_id=%@",[[SelfieDataManager sharedInstance]max_tag_id]]]];
     

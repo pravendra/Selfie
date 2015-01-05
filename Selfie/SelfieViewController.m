@@ -45,7 +45,6 @@
 - (void)loadSelfieData:(NSNotification *)notification
 {
     self.standard_resolution_dataset = [[[SelfieDataManager sharedInstance]selfieDataDict]objectForKey:STANDARD_RESOLUTION];
-   // NSLog(@"%lu",(unsigned long)self.standard_resolution_dataset.count);
     self.low_resolution_dataset = [[[SelfieDataManager sharedInstance]selfieDataDict]objectForKey:LOW_RESOLUTION];
     self.thumbnail_dataset = [[[SelfieDataManager sharedInstance]selfieDataDict]objectForKey:THUMBNAIL];
 
@@ -112,7 +111,7 @@
 - (void)refershControlAction
 {
     SelfieDataLoad *dataload = [[SelfieDataLoad alloc]init];
-    [dataload fetchSelfieData:nil];
+    [dataload fetchSelfieData];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView

@@ -1,0 +1,17 @@
+//
+//  Selfie-Prefix.pch
+//  Selfie
+//
+//  Created by Pravendra Singh on 1/4/15.
+//  Copyright (c) 2015 pravendrasingh. All rights reserved.
+//
+
+#ifndef Selfie_Selfie_Prefix_pch
+#define Selfie_Selfie_Prefix_pch
+#define NSLog(...) NSLog(__VA_ARGS__)
+
+#import "Constant.h"
+#import "Util.h"
+#import "SelfieDataManager.h"
+
+#endif
